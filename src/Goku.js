@@ -4,31 +4,23 @@ import countHits from './CountHits';
 
 export class Goku extends Component {
 
-    state = {
-        hits:0
-    }
-
-    addOne = ()=>{
-        this.setState({
-            hits: this.state.hits + 1
-        })
-    }
-
+   
   render() {
+    const {name, addOneHit, hocState} = this.props;
     return (
       <div className='col'>
         <img src={goku} alt="goku" style={{ height:400}} /> <br/>
-        <button onClick={this.addOne} className='btn btn-primary m-3'>{this.props.name} frappe</button>
+        <button onClick={addOneHit} className='btn btn-primary m-3'>{name} frappe</button>
 
         <table className='table table-striped'>
             <thead>
             <tr>
-                <th scope='col'>{this.state.hits <=1 ? 'Coup' : 'Coups' }</th>
+                <th scope='col'>{hocState.hits <=1 ? 'Coup' : 'Coups' }</th>
             </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>{this.state.hits}</td>
+                    <td>{hocState.hits}</td>
                 </tr>
             </tbody>
         </table>
