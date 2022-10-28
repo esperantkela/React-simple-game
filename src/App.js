@@ -1,4 +1,5 @@
 import React,{ Component } from 'react';
+import Goku from './Goku';
 import Vegeta from './Vegeta';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
 
         <div className='row'>
         <Vegeta/>
+        <Goku/>
         </div>
       </div>
     );
