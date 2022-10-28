@@ -15,6 +15,7 @@ export class Vegeta extends Component {
             <thead>
             <tr>
                 <th scope='col'>{hocState.hits <=1 ? 'Coup' : 'Coups' }</th>
+                <th scope='col'>Vie</th>
             </tr>
             </thead>
             <tbody>

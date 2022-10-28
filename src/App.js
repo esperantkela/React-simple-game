@@ -3,6 +3,14 @@ import Goku from './Goku';
 import Vegeta from './Vegeta';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       vegeta :100,
+       goku : 100
+    }
+  }
   render(){
     return(
       <div className='container text-center'>
@@ -10,8 +18,8 @@ class App extends Component {
         <hr/>
 
         <div className='row'>
-        <Vegeta name="Vegeta"/>
-        <Goku name="Goku"/>
+        <Vegeta name="Vegeta" life={this.state.vegeta}/>
+        <Goku name="Goku" life={this.state.goku}/>
         </div>
       </div>
     );
