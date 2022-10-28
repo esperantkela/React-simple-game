@@ -5,7 +5,7 @@ import countHits from './CountHits';
 export class Vegeta extends Component {
 
   render() {
-    const {name, addOneHit, hocState} = this.props;
+    const {name, addOneHit, hocState, life} = this.props;
     return (
       <div className='col'>
         <img src={vegeta} alt="vegeta" style={{ height:400}} /> <br/>
@@ -21,6 +21,7 @@ export class Vegeta extends Component {
             <tbody>
                 <tr>
                     <td>{hocState.hits}</td>
+                    <td>{life}%</td>
                 </tr>
             </tbody>
         </table>
