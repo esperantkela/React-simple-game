@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import vegeta from './vegeta.png'
+import countHits from './CountHits';
 
 export class Vegeta extends Component {
 
@@ -36,4 +37,4 @@ export class Vegeta extends Component {
   }
 }
 
-export default Vegeta
+export default countHits(Vegeta)

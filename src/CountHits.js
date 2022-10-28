@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 
-export default class CountHits extends Component {
-  render() {
-    return (
-      <div>CountHits</div>
-    )
-  }
+const countHits = (WrappedComponent)=>{
+    class CountHits extends Component {
+        render() {
+          return <WrappedComponent {...this.props}/>
+        }
+       
+      }
+      return CountHits;
 }
+
+
+export default  countHits

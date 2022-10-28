@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import goku from './goku.png'
+import countHits from './CountHits';
 
 export class Goku extends Component {
 
@@ -36,4 +37,4 @@ export class Goku extends Component {
   }
 }
 
-export default Goku
+export default countHits(Goku) 
