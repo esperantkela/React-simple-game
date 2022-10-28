@@ -12,6 +12,7 @@ export class Vegeta extends Component {
             hits: this.state.hits + 1
         })
     }
+
   render() {
     return (
       <div className='col'>
@@ -21,7 +22,7 @@ export class Vegeta extends Component {
         <table className='table table-striped'>
             <thead>
             <tr>
-                <th scope='col'>Coups</th>
+                <th scope='col'>{this.state.hits <=1 ? 'Coup' : 'Coups' }</th>
             </tr>
             </thead>
             <tbody>
