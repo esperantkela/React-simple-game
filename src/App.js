@@ -10,8 +10,8 @@ class App extends Component {
         <hr/>
 
         <div className='row'>
-        <Vegeta/>
-        <Goku/>
+        <Vegeta name="Vegeta"/>
+        <Goku name="Goku"/>
         </div>
       </div>
     );

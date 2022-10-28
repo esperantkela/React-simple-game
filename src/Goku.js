@@ -17,7 +17,7 @@ export class Goku extends Component {
     return (
       <div className='col'>
         <img src={goku} alt="goku" style={{ height:400}} /> <br/>
-        <button onClick={this.addOne} className='btn btn-primary m-3'>Frapper</button>
+        <button onClick={this.addOne} className='btn btn-primary m-3'>{this.props.name} frappe</button>
 
         <table className='table table-striped'>
             <thead>
