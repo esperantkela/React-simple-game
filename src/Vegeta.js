@@ -6,6 +6,7 @@ export class Vegeta extends Component {
 
   render() {
     const {name, addOneHit, hocState, life} = this.props;
+    const lifeValue = life>0 ? `${life}%` : 'Vous êtes mort';
     return (
       <div className='col'>
         <img src={vegeta} alt="vegeta" style={{ height:400}} /> <br/>
@@ -21,7 +22,7 @@ export class Vegeta extends Component {
             <tbody>
                 <tr>
                     <td>{hocState.hits}</td>
-                    <td>{life}%</td>
+                    <td>{lifeValue}</td>
                 </tr>
             </tbody>
         </table>
